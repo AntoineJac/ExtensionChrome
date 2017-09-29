@@ -1,0 +1,187 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E5E5E5;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* tabs */
+
+.tabs {
+  padding: 0 0.5em;
+  margin-bottom: 1em;
+}
+
+.tab {
+  display: inline-block;
+  padding: 0.5em;
+  border-top: 1px solid #CCC;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin-right: 1em;
+  background-color: #bbb;
+  color: #fff;
+  position: relative;
+  transition: all 250ms ease;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.tab.active {
+  font-weight: bold;
+  background-color: inherit;
+  color: inherit;      
+}
+
+.tabs-content {
+  position: relative;
+}
+
+.tab-content {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: all 250ms ease;
+}
+
+.tab-content.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+  top: 0;
+}
+
+
+.header {
+  background-color: #000;
+  background-image: url(../images/rubicon-icon.jpg);
+  background-position: 0.5em 50%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  color: #FFF;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  font-size: 1.5em;
+  padding: 0 0.5em;
+  margin-bottom: 0.5em;
+}
+
+fieldset {
+  border: 1px solid rgba(204, 204, 204, 0.3);
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  vertical-align: top;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+hr {
+  margin: 0.5em;
+}
+
+.wrapper {
+  min-width: 600px;
+  height: auto;
+  position: relative;
+}
+
+.playground-form {
+  width: 100%;
+}
+
+.playground-form label {
+  vertical-align: top;
+}
+
+.playground-form input[type=text] {
+  min-width: 12em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+.playground-form button {
+  min-width: 6em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+.playground-form select {
+  min-width: 6em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+.playground-form input[type=number] {
+  min-width: 6em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  background: #555;
+  color: #fff;
+  border: 0;
+  font-family: monospace;
+  line-height: 1em;
+  font-size: 1em;
+}
+
+.playground-form input[type=checkbox] {
+  font-size: inherit;
+  min-width: 6em;
+  width: 6em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+.playground-form textarea {
+  min-height: 2em;
+  min-width: 24em;
+  margin-right: 1em;
+  transition: all 250ms ease;
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+  margin-bottom: 1em;
+  border: 1px solid rgba(204, 204, 204, 0.3);
+}
+
+.playground-form textarea:focus {
+  min-height: 6em;
+}
+
+.playground-form.smarttag textarea:focus {
+  min-height: 14em;
+  min-width: 40em;
+}
+
+.btn {
+  text-align: center;
+  border: 0;
+  display: inline-block;
+  width: auto;
+  min-width: inherit;
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+
+}
+
+.btn.action {
+  color: #FFF;
+  background: #5c9e7e;
+  background: linear-gradient(to bottom,  #5c9e7e 0%,#0f4d2e 100%);
+}
+
+.pre-output {
+  margin: 1em;
+}
+
+.rp-output {
+  max-width: 300px;
+  white-space: normal;
+}
+
+.has-help {
+  cursor: help;
+}
